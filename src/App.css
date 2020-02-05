@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.swatch {
+  height: 200px;
+  width: 200px;
+  border: 1px solid white;
+}
+
+.slider-div {
+  display: flex;
+  flex-direction: column;
+}
