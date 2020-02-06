@@ -3,9 +3,7 @@ import "./App.css";
 import Slider from "./components/Slider";
 
 function App() {
-
-  // const hsla = `hsla(${hue}, ${sat}%, ${light}%, ${alpha})`;
-  const hsla = 'hsla(250, 100%, 50%, 1)'
+  const hsla = `hsla(250, 100%, 50%, 1)`
   console.log(hsla)
 
   return (
