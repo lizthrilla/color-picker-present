@@ -3,8 +3,8 @@ import "./App.css";
 import Slider from "./components/Slider";
 
 function App() {
-  const hsla = `hsla(250, 100%, 50%, 1)`
-  console.log(hsla)
+  const hsl = `hsla(250, 100%, 50%)`
+  console.log(hsl)
 
   const onSliderChange = (e) => {
     console.log(e.target.value)
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="swatch" style={{ backgroundColor: hsla }} />
+        <div className="swatch" style={{ backgroundColor: hsl }} />
         <Slider
           onChange={e => onSliderChange(e)}
           sliderMax="330"
