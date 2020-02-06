@@ -6,33 +6,31 @@ function App() {
   const hsla = `hsla(250, 100%, 50%, 1)`
   console.log(hsla)
 
+  const onSliderChange = (e) => {
+    console.log(e.target.value)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="swatch" style={{ backgroundColor: hsla }} />
         <Slider
-          onChange={e => console.log(e, "HUE")}
+          onChange={e => onSliderChange(e)}
           sliderMax="330"
           sliderValue={250}
           sliderLabel={"Hue"}
         />
         <Slider
-          onChange={e => console.log(e, "SAT")}
+          onChange={e => onSliderChange(e)}
           sliderLabel={"Saturation"}
           sliderMax="100"
           sliderValue={100}
         />
         <Slider
-          onChange={e => console.log(e, "LIGHT")}
+          onChange={e => onSliderChange(e)}
           sliderLabel={"Light"}
           sliderMax="100"
           sliderValue={50}
-        />
-        <Slider
-          onChange={e => console.log(e, "ALPHA")}
-          sliderLabel={"Alpha"}
-          sliderMax="1"
-          sliderValue={1}
         />
       </header>
     </div>
