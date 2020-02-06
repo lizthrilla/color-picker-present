@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Slider from "./components/Slider";
 
 function App() {
+  const [hue, setHue] = useState(250)
 
   // const hsla = `hsla(${hue}, ${sat}%, ${light}%, ${alpha})`;
-  const hsla = 'hsla(250, 100%, 50%, 1)'
+  const hsla = `hsla(${hue}, 100%, 50%, 1)`
   console.log(hsla)
+  console.log(hue)
 
   return (
     <div className="App">
@@ -15,7 +17,7 @@ function App() {
         <Slider
           onChange={e => console.log(e, "HUE")}
           sliderMax="360"
-          sliderValue={250}
+          sliderValue={hue}
           sliderLabel={"Hue"}
         />
         <Slider
