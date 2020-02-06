@@ -12,7 +12,7 @@ function App() {
         <div className="swatch" style={{ backgroundColor: hsla }} />
         <Slider
           onChange={e => console.log(e, "HUE")}
-          sliderMax="360"
+          sliderMax="330"
           sliderValue={250}
           sliderLabel={"Hue"}
         />
