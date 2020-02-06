@@ -9,7 +9,7 @@ const Slider = ({onChange, sliderValue, sliderMax, sliderLabel}) => {
         min="0"
         max={sliderMax}
         value={sliderValue}
-        onChange={e => onChange(e)}
+        onChange={onChange}
       />
     </div>
   );
