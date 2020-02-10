@@ -4,7 +4,6 @@ import Slider from "./components/Slider";
 
 function App() {
   const hsl = `hsla(250, 100%, 50%)`
-  console.log(hsl)
 
   const onSliderChange = (e) => {
     console.log(e.target.value)
