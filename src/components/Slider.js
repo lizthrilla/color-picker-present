@@ -1,6 +1,6 @@
 import React from "react";
 
-const Slider = ({ onChange, sliderLabel, sliderMax, sliderValue, step }) => {
+const Slider = ({ onChange, sliderLabel, sliderMax, sliderValue }) => {
   return (
     <div className="slider-div">
       <label>{sliderLabel}</label>
@@ -8,7 +8,6 @@ const Slider = ({ onChange, sliderLabel, sliderMax, sliderValue, step }) => {
         max={sliderMax}
         min="0"
         onChange={onChange}
-        step={sliderLabel === 'Alpha' ? '0.01' : '1'}
         type="range"
         value={sliderValue}
       />
